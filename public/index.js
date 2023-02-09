@@ -1,5 +1,5 @@
-const API_URL = "https://shortify-api.onrender.com/api/shortify";
-const API_BASE = "https://shortify-api.onrender.com/"
+const API_URL = "https://sh-ti.onrender.com/api/shortify";
+const API_BASE = "https://sh-ti.onrender.com/"
 
 function copy(target) {
   //  selecting element to copy
