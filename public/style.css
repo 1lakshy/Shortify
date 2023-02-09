@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  text-decoration: none;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-color: aqua;
+}
+
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.heroSection {
+  background-image: url('img/heroBg.svg');
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+}
+
+.heroTitle h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+.heroDis {
+  font-size: 1.25rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+}
+
+.mainDiv {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.inputUrl_wrapper {
+  width: 40rem;
+  height: 5rem;
+  background-color: #f0eeee;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+#inputUrl {
+  width: 90%;
+  height: 80%;
+  border: none;
+  outline: none;
+  margin: auto;
+  font-size: 1.75rem;
+  background-color: #f0eeee;
+}
+#submit {
+  height: 4.25rem;
+  width: 4.25rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin: auto 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  z-index: 1000;
+  /* position: relative; */
+}
+.submitSpan::after {
+  content: url(img/cut.png);
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+}
+
+.submitSpan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.form {
+  display: flex;
+  align-items: center;
+  background-color: #f0eeee;
+  border-radius: 1rem;
+  /* position: absolute; */
+}
+
+a:visited {
+  color: gray;
+}
+.content {
+  width: 45rem;
+  height: max-content;
+  padding: 1rem;
+  background-color: #fff;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.content h2 {
+  margin-bottom: 0.8rem;
+}
+
+.show {
+  display: block;
+}
+.shortLink a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  font-family: 'poppins', sans-serif;
+  margin-left: 1rem;
+}
+
+.shortLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  background-color: #f0eeee;
+  border-radius: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+.copy::before {
+  content: url(img/copyIcon.png);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+.clip {
+  width: 2rem;
+  height: 2rem;
+  opacity: 0.5;
+}
+.clip:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+.tik{
+    width: 2rem;
+    height: 2rem;
+  }
+  .copiedNot{
+    display: none;
+  }
+  .copied{
+    width: 6rem;
+    height: 3rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0eeee;
+    border-radius: 1rem;
+  }
+
+/* mediaquery */
+
+@media (max-width: 650px) {
+  #submit {
+    height: 3.5rem;
+    width: 6rem;
+  }
+
+  .inputUrl_wrapper {
+    width: 25rem;
+    height: 3.5rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+  }
+
+  .heroTitle h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+  }
+
+  .content {
+    width: 32rem;
+    height: max-content;
+    padding: 1rem;
+    background-color: beige;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  }
+}
+
+@media (max-width: 540px) {
+  .heroSection {
+    background-image: url('img/Frame3.svg');
+    background-color: #ff9306;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .mainDiv {
+    background: #fff;
+    width: 100vw;
+    height: 60%;
+    position: absolute;
+    bottom: 0;
+    border-top-right-radius: 4rem;
+    border-top-left-radius: 4rem;
+  }
+  .mainDiv::before {
+    content: '';
+    width: 4rem;
+    height: 0.4rem;
+    background-color: black;
+    position: absolute;
+    border-radius: 25%;
+    top: 1rem;
+  }
+
+  .heroTitle h1 {
+    display: none;
+  }
+  .heroDis {
+    display: none;
+  }
+  .form {
+    display: flex;
+
+    justify-content: space-around;
+    width: 90vw;
+    background: #f0eeee;
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    height: 5rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    z-index: 1000;
+  }
+  .inputUrl_wrapper {
+    width: 80%;
+    height: 3rem;
+    background-color: #f0eeee;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+  }
+  .inputUrl_wrapper::before {
+    content: 'Create New Link';
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(53, 53, 53);
+    font-weight: 600;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 1.5rem;
+  }
+  #inputUrl {
+    background-color: #f0eeee;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.1rem;
+  }
+  #submit {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 0rem;
+    margin-bottom: 0.1rem;
+    z-index: 1000;
+  }
+  .content {
+    width: 98vw;
+    height: max-content;
+    position: absolute;
+    top: 7rem;
+    padding: 1rem;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: none;
+  }
+  .content h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .shortLink {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    background-color: #f0eeee;
+    border-radius: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  .urlLink {
+    margin-left: 0.5rem;
+  }
+
+  .submitSpan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .tik{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .copiedNot{
+    display: none;
+  }
+  .copied{
+    width: 5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0eeee;
+    border-radius: 0.5rem;
+  }
+}
